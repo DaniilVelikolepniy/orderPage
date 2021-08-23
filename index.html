@@ -19,10 +19,10 @@
             </div>
         </div>
         <nav class="topNav">
-            <a href="#" class="nav">меню</a>
-            <a href="#" class="nav">как заказать</a>
-            <a href="#" class="nav">выход</a>
-            <a href="#" class="nav">корзина</a>
+            <a href="#" class="nav first">меню</a>
+            <a href="#" class="nav second">как заказать</a>
+            <a href="#" class="nav third">выход</a>
+            <a href="#" class="nav fourth">корзина</a>
         </nav>
     </header>
 
@@ -30,60 +30,72 @@
         <div class="pageTitle">
             <h1>оформление заказа</h1>
         </div>
-        <div class="column">
+        <div class="column colLeft">
             <div class="cont">
-                <div>
+                <div class="div">
                     <p class="techNadpis">оплата и доставка</p>
                 </div>
-
-                <hr>
-
-                <div class="forms">
-                    <label for="">
-                        <p>адрес доставки:</p>
+                <div class="form">
+                   <div class="formItem">
+                        <label class="labels" for="adress">
+                            адрес доставки:
+                        </label>
                         <select
                             class="selects"
                             name=""
-                            id=""
+                            id="adress"
                         >
-                            <option value="">Петровская, 23</option>
-                            <option value="">Лориэн</option>
-                            <option value="">Хоббитон</option>
-                            <option value="">Рохан</option>
+                            <option class="options" value="">Петровская, 28</option>
+                            <option class="options" value="">Ярославская, 2</option>
+                            <option class="options" value="">Амундсена, 15</option>
+                            <option class="options" value="">Неглинная, 19</option>
                         </select>
-                    </label>
-                    <label for="">
-                        <p>время доставки:</p>
+                   </div>
+                   <div class="formItem">
+                        <label class="labels" for="time">
+                            время доставки:
+                        </label>
                         <select
                             class="selects"
                             name=""
-                            id=""
+                            id="time"
                         >
-                            <option value="">с 13:00 до 14:00</option>
-                            <option value="">с 14:00 до 15:00</option>
-                            <option value="">с 15:00 до 16:00</option>
-                            <option value="">с 16:00 до 17:00</option>
+                            <option class="options" value="">с 13:00 до 14:00</option>
+                            <option class="options" value="">с 14:00 до 15:00</option>
+                            <option class="options" value="">с 15:00 до 16:00</option>
+                            <option class="options" value="">с 16:00 до 17:00</option>
                         </select>
-                    </label>
-                    <label for="">
-                        <p>комментарий:</p>
-                        <textarea></textarea>
-                    </label>
-                    <p style="user-select: none;">способ оплаты</p>
-                    <label><input type="radio" name="money" id="">оплата наличными</label>
-                    <label><input type="radio" name="money" id="">оплата картой</label>
+                    </div>
+                    <div class="formItem fIComment">
+                        <label class="labels" for="comment">
+                            комментарий:
+                        </label>
+                        <textarea
+                            name=""
+                            id="comment"
+                        ></textarea>
+                    </div>
+                    <div class="formItem">
+                        <label class="labels" for="money">
+                            способ оплаты:
+                        </label>
+                        <div class="moneyTable">
+                            <input class="moneyInput" type="radio" name="money" checked id="nal">
+                            <label class="moneyLabels" for="nal">оплата наличными</label>
+                            <input class="moneyInput" type="radio" name="money" id="card">
+                            <label class="moneyLabels" for="card">оплата картой</label>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="column colRight">
-            <div class="cont">
+            <div class="cont contRigt">
                 <div class="div">
                     <p class="techNadpis">заказ</p>
                     <p class="techNadpis">изменить</p>
                 </div>
-                <hr>
                 <div class="forms rightForm">
-                    <!-- Перечень товаров -->
                     <div class="goods">
                         <div class="basketItem">
                             <img src="img/cats/cat0.jpg" alt="" class="images">
@@ -99,21 +111,19 @@
                                 </p>
                                 <div class="priceDishes">
                                     <p class="price">
-                                        80&#8381;
+                                        80 &#8381;
                                     </p>
                                     <p class="discount">
-                                        72&#8381;
+                                        72 &#8381;
                                     </p>
                                 </div>
                             </div>
                             <div class="numberOfDishes">
                                 <div class="switches">
                                     <p class="decrease">
-                                        -
+                                        &#8211;
                                     </p>
-                                    <p class="number">
-                                        1
-                                    </p>
+                                    <input type="text" value="1" maxlength="2" class="number" onkeyup="this.value = this.value.replace(/[^\d]/g,'9');"/>
                                     <p class="increase">
                                         +
                                     </p>
@@ -123,9 +133,11 @@
                                 </p>
                             </div>
                         </div>
-                        <hr>
+
+                        <!-- <hr>
+
                         <div class="basketItem">
-                            <img src="img/cats/cat0.jpg" alt="" class="images">
+                            <img src="img/cats/cat1.jpg" alt="" class="images">
                             <div class="basketItemsCenter">
                                 <p class="namesOfDishes">
                                     суп грибной
@@ -162,9 +174,11 @@
                                 </p>
                             </div>
                         </div>
+
                         <hr>
+
                         <div class="basketItem">
-                            <img src="img/cats/cat0.jpg" alt="" class="images">
+                            <img src="img/cats/cat10.jpg" alt="" class="images">
                             <div class="basketItemsCenter">
                                 <p class="namesOfDishes">
                                     суп грибной
@@ -201,9 +215,11 @@
                                 </p>
                             </div>
                         </div>
+
                         <hr>
+
                         <div class="basketItem">
-                            <img src="img/cats/cat0.jpg" alt="" class="images">
+                            <img src="img/cats/cat11.jpg" alt="" class="images">
                             <div class="basketItemsCenter">
                                 <p class="namesOfDishes">
                                     суп грибной
@@ -216,10 +232,10 @@
                                 </p>
                                 <div class="priceDishes">
                                     <p class="price">
-                                        80&#8381;
+                                        80 &#8381;
                                     </p>
                                     <p class="discount">
-                                        72&#8381;
+                                        72 &#8381;
                                     </p>
                                 </div>
                             </div>
@@ -239,10 +255,29 @@
                                     удалить
                                 </p>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
-                    <!-- суммирование стоимости и кнопка отправки формы -->
-                    <div class="orderPrice"></div>
+                    <div class="orderPrice">
+                        <div class="rowsInOrderPrice rowsInOrderPrice0">
+                            <p class="finalPriceList">
+                                сумма:
+                            </p>
+                            <p class="orderPricePr">
+                                480 &#8381;
+                            </p>
+                        </div>
+                        <div class="rowsInOrderPrice">
+                            <p class="finalPriceList">
+                                к оплате:
+                            </p>
+                            <p class="orderPriceDiscount">
+                                381 &#8381;
+                            </p>
+                        </div>
+                        <button class="button">
+                            оформить заказ
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

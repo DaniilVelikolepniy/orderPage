@@ -1,29 +1,30 @@
 body {
     font-family: 'Open Sans', sans-serif;
     // font-family: 'Roboto', sans-serif;
-    margin: 75px 0 0 0;
+    margin: 75px 10px 0 0;
     border-top: solid 3px black;
     border-left: solid 1px black;
     border-bottom: solid 2px black;
     border-right: solid 2px black;
-    width: 1271px;
-    height: 636px;
+    width: 1406px;
+    height: 706px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 65px 543px 27px;
+    grid-template-rows: 73px 602px 27px;
 
 
     .header {
-        width: 100%;
+        width: 1406px;
+        height: 73px;
         display: grid;
         grid-template-rows: 1fr;
-        grid-template-columns: 635px 636px;
+        grid-template-columns: 699px 707px;
         font-size: 15px;
 
         .brend {
             display: grid;
-            grid-template-rows: 1fr;
-            grid-template-columns: auto 68%;
+            grid-template-rows: 73px;
+            grid-template-columns: 218px 480px;
             align-items: center;
             
             .logo {
@@ -33,60 +34,89 @@ body {
 
             .boxForPhone {
                 margin: 0;
-                height: 65px;
+                height: 73px;
+                width: 480px;
                 align-items: center;
                 border-left: solid 1px black;
 
                 .phone {
-                    margin: 24px auto;
+                    margin: 28px auto;
                     display: block;
-                    color: black;
-                    text-decoration: none;
                     width: fit-content;
                     height: 17px;
+                    color: black;
+                    text-decoration: none;
+                    font-weight: bold;
+                    letter-spacing: 1.5px;
                 }
             }
         }
 
         .topNav {
+            width: 708px;
             border-left: solid 1px black;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            padding: 0 15px;
+            display: grid;
+            grid-template-rows: 73px;
+            grid-template-columns: 176.5px 176.5px 176.5px 176.5px;
             user-select: none;
 
             .nav {
                 display: block;
-                text-decoration: none;
-                margin: auto;
+                padding-top: 27px;
+                width: auto;
+                height: 48px;
                 color: black;
-                font-size: 17.1px;
+                font-size: 15px;
+                text-decoration: none;
+            }
+
+            .first {
+                padding-left: 75px;
+            }
+
+            .second {
+                padding-left: 47px;
+            }
+
+            .third {
+                padding-left: 76px;
+            }
+
+            .fourth {
+                padding-left: 43px;
             }
         }
     }
 
     .main {
         border-top: solid 1px black;
+        border-bottom: solid 1px black;
+        height: 600px;
+        width: 1406px;
         display: grid;
-        grid-template-rows: 134.5px 407.5px;
-        grid-template-columns: 635px 635px;
+        grid-template-rows: 151px 407.5px;
+        grid-template-columns: 699px 707px;
 
         .pageTitle {
             grid-column-start: 1;
             grid-column-end: 3;
-            height: 100px;
+            height: 150px;
+            width: 1406px;
             user-select: none;
+            border: solid 1px black;
 
             h1 {
                 display: inline-block;
-                text-transform:uppercase;
-                height: 70px;
-                font-size: 50px;
+                text-transform: uppercase;
+                height: 74px;
+                font-size: 55px;
                 margin-left: 62px;
-                letter-spacing: 5.5px;
+                letter-spacing: 6.4px;
             }
+        }
+
+        .colLeft {
+            width: 699px;
         }
 
         .colRight {
@@ -94,91 +124,114 @@ body {
         }
         
         .column {
-            border-top: solid 1px black;
-            border-bottom: solid 1px black;
-            background-color: #eee5e5;
-            width: 635px;
-            height: 405px;
+                border-top: solid 1px black;
+                border-bottom: solid 1px black;
+                background-color: #eee5e5;
+                height: 448px;
 
             .cont {
                 display: block;
-                margin: 23px auto;
-                height: 360px;
-                width: 510px;
-                background-color: white;
+                margin: 23px auto 23px 61px;
+                height: 402px;
+                width: 563px;
+                // background-color: white;
 
                 .techNadpis {
                     margin: 0;
-                    font-size: 13px;
+                    font-size: 16px;
                     user-select: none;
+                    padding-top: 3px;
+                }
+
+                .form {
+                    margin: 27px 0;
+                    height: 320px;
+                    width: 563px;
+                    // border: solid 1px black;
+
+                    .formItem {
+                        margin-bottom: 20px;
+
+                        .labels {
+                            display: block;
+                            height: 22px;
+                            font-size: 15px;
+                            user-select: none;
+                        }
+
+                        .selects {
+                            height: 37px;
+                            width: 562px;
+                            font-size: 20px;
+                        }
+
+                        textarea {
+                            height: 32px;
+                            width: 556px;
+                            font-size: 13px;
+                            resize: none;
+                        }
+
+                        .moneyTable {
+                            display: grid;
+                            grid-template-columns: 20px 542px;
+                            grid-column-gap: 10px ;
+                            grid-template-rows: 20px 20px;
+                            grid-row-gap: 10px;
+                        
+                            .moneyLabels {
+                                margin: 9px 0 0 0;
+                                user-select: none;
+                            }
+
+                            .moneyInput {
+                                margin: 9px 0 0 0;
+                                display: inline-block;
+                                width: 20px;
+                                height: 20px;
+                                color: black;
+                            }
+                        }
+                    }
+
+                    .fIComment{
+                        margin-bottom: 14px;
+                    }
                 }
 
                 .div {
                     display: flex;
                     flex-direction: row;
+                    height: 27px;
                     justify-content: space-between;
-                    margin-bottom: 9px;
-
-                    
-                }
-
-                hr {
-                    margin: 0;
-                    width: 502px;
-                }
-
-                .forms {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-around;
-                    height: 310px;
-
-                    .selects {
-                        height: 35px;
-                        width: 505px;
-                    }
-                    
-                    label {
-                        display: inline-block;
-                        user-select: none;
-
-                        p {
-                            font-size: 13px;
-                        }
-                    }
-
-                    textarea {
-                        resize: none;
-                        height: 35px;
-                        width: 499px;
-                    }
+                    border-bottom: solid 1px black;
                 }
 
                 .rightForm {
                     display: grid;
-                    grid-template-columns: 1fr;
-                    grid-template-rows: 231px 159px;
+                    grid-template-columns: 568px;
+                    grid-template-rows: 258px 115px;
 
                     .goods {
-                        height: 231px;
+                        width: 570px;
+                        height: 258px;
                         overflow: auto;
                         display: grid;
                         grid-template-columns: 1fr;
                         grid-template-rows: auto;
-                        width: 510px;
 
                         .basketItem {
-                            width: 503px;
-                            height: 65px;
-                            // border-bottom: solid 1px black;
-                            padding: 11px 0;
+                            border-bottom: solid 1px rgba(128, 128, 128, 0.493);
+                            width: 562px;
+                            height: 70px;
+                            padding: 15px 0;
                             display: flex;
                             flex-direction: row;
                             justify-content: space-between;
 
                             .images {
-                                width: 65px;
-                                height: 64px;
+                                width: 70px;
+                                height: 70px;
                                 user-select: none;
                             }
 
@@ -233,28 +286,38 @@ body {
                             }
 
                             .numberOfDishes {
-                                width: 110px;
+                                width: 122px;
+                                height: 70px;
                                 border: solid 1px black;
                                 display: grid;
-                                grid-template-columns: 1fr;
-                                grid-template-rows: 1fr 1fr;
+                                grid-template-columns: 122px;
+                                grid-template-rows: 35px 35px;
 
                                 .switches {
-                                    font-size: 15px;
+                                    font-size: 26px;
                                     border-bottom: solid 1px black;
                                     display: grid;
                                     grid-template-rows: 1fr;
-                                    grid-template-columns: 20px 70px 20px;
+                                    grid-template-columns: 31px 60px 31px;
 
                                     .decrease,
-                                    .number,
                                     .increase {
                                         margin: auto;
                                         display: inline-block;
                                         cursor: pointer;
                                         user-select: none;
                                     }
-                                }
+
+                                    .number {
+                                        margin: auto;
+                                        display: inline-block;
+                                        cursor: pointer;
+                                        width: 60px;
+                                        height: 32px;
+                                        text-align: center;
+                                        background-color: white;
+                                        border: none;
+                                    }
 
                                 .deleteDishes {
                                     margin: 0 auto;
@@ -263,7 +326,7 @@ body {
                                     height: 22px;
                                     cursor: pointer;
                                     text-align: center;
-                                    font-size: 12px;
+                                    font-size: 14px;
                                     user-select: none;
                                 }
                             }
@@ -272,21 +335,79 @@ body {
 
                     .orderPrice {
                         border-top: solid 1px black;
-                        height: 101px;
+                        height: 115px;
+                        width: 562px;
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        grid-template-rows: 40px 32px 35px;
+
+                        .rowsInOrderPrice {
+                            height: 35px;
+                            width: 561px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+
+                            .finalPriceList,
+                            .orderPriceDiscount,
+                            .orderPricePr {
+                                display: inline-block;
+                                margin: auto 0;
+                            }
+
+                            .finalPriceList {
+                                font-size: 13px;
+                                font-weight: bold;
+                            }
+                            
+                            .orderPriceDiscount,
+                            .orderPricePr {
+                                margin-right: 10px;
+                            }
+
+                            .orderPricePr {
+                                color: grey;
+                            }
+                        }
+                        
+                        .rowsInOrderPrice0 {
+                            border-bottom: solid 1px rgba(128, 128, 128, 0.705);
+                        }
+
+                        .button {
+                            height: 35px;
+                            width: 562px;
+                            border: none;
+                            background-color: #febf18;
+                            font-weight: bold;
+                            cursor: pointer;
+                            font-size: 24px;
+                        }
+
+                        .button:hover {
+                            background-color: #fec11898;
+                            box-shadow: 0 0 5px #febf18;
+                            border-radius: 5px;
+                            transition: all 0.4s linear;
+                        }
                     }
                 }
+            }
+
+            .contRigt {
+                margin-left: 71px;
             }
         }
     }
 }
 
 ::-webkit-scrollbar {
-    width: 2px;
+    width: 3px;
     padding: 0 15px 0 0;
 }
 
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
+    box-shadow: inset 0 0 5px rgba(128, 128, 128, 0.658);
     border-radius: 10px;
 }
 
